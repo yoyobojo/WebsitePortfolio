@@ -86,16 +86,6 @@ $(window).on('load', function() {
     }
 
 	/* -----------------------------------
-			4. Blogs Masonry Setup
-	----------------------------------- */
-    $('.blog-masonry').isotope({ layoutMode: 'moduloColumns' });
-
-});
-
-$(document).ready(function() {
-    "use strict";
-
-	/* -----------------------------------
 			5. Active Current Link
 	----------------------------------- */
     $('.header-main ul li a').on('click',function() {
