@@ -156,25 +156,25 @@
 										</p>
 									</div>
 
+                  <!-- Icon Info -->
+                  <div class="col-lg-4 col-sm-4">
+                                    <div class="info-icon">
+                                        <i class="fas fa-certificate"></i>
+                                        <div class="desc-icon">
+                        <h6>20+ Projects</h6>
+                                              <p>Completed</p>
+                                          </div>
+                                    </div>
+                                  </div>
+
 									<!-- Icon Info -->
 									<div class="col-lg-4 col-sm-4">
                                 		<div class="info-icon">
                                      		<i class="fas fa-award"></i>
                                      		<div class="desc-icon">
-												<h6>3 Years Job</h6>
-                                            	<p>Experience</p>
+												<h6>$15,000 NYU Student <br />Venture Fellowship</h6>
+                                            	<p>Grant</p>
                                        		</div>
-                                		</div>
-                                	</div>
-
-									<!-- Icon Info -->
-									<div class="col-lg-4 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-certificate"></i>
-                                     		<div class="desc-icon">
-												<h6>20+ Projects</h6>
-                                            	<p>Completed</p>
-                                      		</div>
                                 		</div>
                                 	</div>
 
@@ -338,10 +338,10 @@
 								<!-- Experience Item -->
 								<div class="item">
 									<div class="main">
-										<h4>Web and App Developer | <span style="font-style: italic;">Freelance</span></h4>
+										<h4>Founder and CEO | <span style="font-style: italic;">Middlware</span></h4>
 										<p><i class="far fa-calendar-alt"></i>Jan. 2018 - Present</p>
 									</div>
-									<p>• Built unique websites with languages including HTML, CSS, Javascript on web services like AWS<br>• Designed 20+ interactive wireframes and mockups using Sketch and InVision of which 10+ were used<br>• Maintained websites and managing content for 12+ websites as well as the client relationships</p>
+									<p>• Managed a team of 3 developers while leading all sales and design pitches<br>• Built unique websites and apps with technologies including Django, VueJS, AngularJS on AWS web services<br>• Designed 20+ interactive wireframes and mockups using Sketch and InVision of which 10+ were used</p>
 								</div>
 
                 <!-- Experience Item -->
@@ -350,8 +350,7 @@
                     <h4>Information Technology and Finance Intern | <span style="font-style: italic;">AGCO Corporation</span></h4>
                     <p><i class="far fa-calendar-alt"></i>May 2018 - Aug. 2018</p>
                   </div>
-                  <p>• Programmed and repaired instructional procedures on Google Glass for over 400 employees using Proceedix<br>• Coded VBA script for floor audits saving the Continuous Improvement Team over $200,000 USD yearly<br>• Presented python tech solutions improving data management searching to over 5 executives with PowerPoint
-</p>
+                  <p>• Programmed and repaired instructional procedures on Google Glass for over 400 employees using Proceedix<br>• Coded VBA script for floor audits saving the Continuous Improvement Team over $200,000 USD yearly<br>• Presented python tech solutions improving data management searching to over 5 executives with PowerPoint</p>
                 </div>
 							</div>
 						</div>
@@ -548,7 +547,7 @@
 
 					<!-- Section Title -->
 					<div class="header-page mt-70 mob-mt">
-						<h2>Portfolio</h2>
+						<h2>Featured Projects</h2>
     					<span></span>
 					</div>
 
@@ -578,17 +577,20 @@
 								</figcaption>
 							</figure>
               <div id="inline-popup-sdc" class="white-popup mfp-hide">
-                At Smile Direct Club, I was tasked to develop a user-generated content widget to be displayed on their website that could also display as a slideshow on their TV's in their brick and mortar stores. To do this, I decided to use Vue.js as the framework since it is lightweight and can be easily implimented into many environments, like the Django environment used for their website.
+                <span><strong>Problem:</strong> Paying a third party for a user-generated content widget limiting customizability</span>
+                <br />
+                <span><strong>Solution:</strong> Develop a customizable UGC widget</span>
+                <br />
+                <span><strong>Plan:</strong> Using VueJS, develop the frontend of the widget and then pull images from Smile Direct Club's review platform via API calls</span>
+                <br />
+                <span><strong>Reasoning for tech stack:</strong> I decided to utilize VueJS because it is lightweight and easy to impliment into Smile Direct Club's Django-powered website</span>
                 <br />
                 <br />
-                After that project, I was tasked with creating a uniform design system so that future frontend developers could easily utilize the standard components, spacing, and colors that the frontend team made that summer.
-                <br />
-                <br />
-                As my internship came to an end, the company realized the potential benefits of transforming their website into a Vue framework leading them to converting the entire website into a Vue website.
-                <br />
+                <video src="files/sdc-case-record.mov" autoplay muted loop>
+                Your browser does not support the video tag.
+                </video>
                 <br />
                 <a href="smiledirectclub.com" target="_blank">View the widget on their website.</a>
-
               </div>
 						</div>
 
@@ -603,16 +605,13 @@
                 </figcaption>
               </figure>
               <div id="inline-popup-ll" class="white-popup mfp-hide">
-                This web application (beta version) is purposed for my client, Lighter Living, who founded aero-pilates.
-                <br />
-                <br />
-                The web app prompts the user with three questions to create their workout from a library of hundreds of videos. The questions includes workout duration, intensity, and target muscle group(s).
-                <br />
-                <br />
-                After the user has answered the three questions, the algorithim will string these videos together to create one fluid workout with time in between exercises, giving the user sufficient time to rest and move to the next position.
-                <br />
-                <br />
-                This web application is a work in progress and will continue to expand and grow as we gather feedback from the test users.
+                 <span><strong>Problem:</strong> Users having to watch workouts via television and CD</span>
+                 <br />
+                 <span><strong>Solution:</strong> Develop a custom workout app that allows users to dictate their workout in 3 questions: duration, intensity, target muscle(s)</span>
+                 <br />
+                 <span><strong>Plan:</strong> Host videos in an AWS S3 Bucket to be easily implimented. Add metadata to each video appropriately to align with the 3 questions. Use Django to handle the backend where the 3 questions are processed resulting in a stream of exercises to be played in a specific order</span>
+                 <br />
+                 <span><strong>Reasoning for tech stack:</strong> For 400+ videos (250+ GB), AWS S3 Bucket was the most affordable and customizable option. For the backend, Django is very powerful as many large companies, like Netflix, use it</span>
                 <br />
                 <br />
                 <a href="#" target="_blank">View the app here.</a>
@@ -630,13 +629,14 @@
                 </figcaption>
               </figure>
               <div id="inline-popup-java-pop" class="white-popup mfp-hide">
-                This university project prompted us students to develop a program that can accept a text file, then analyze for the most popular words using a hash map structure.
+                <span><strong>Problem:</strong> Determine the most popular words in any given .txt file with the ability to sort via 3 methods: alphabetically, frequency, and scarcity</span>
+                <br />
+                <span><strong>Solution:</strong> Use a hashmap to store the words and create 3 different sort methods to display the data in a specific order</span>
+                <br />
+                <span><strong>Plan:</strong> In Java, parse .txt files into array lists then into hashmaps so that they are easily identifiable. Create a final function that accepts 3 parameters: file name, sort method, and starting number</span>
                 <br />
                 <br />
-                Furthermore, we were tasked with implimenting the ability to sort from highest to lowest and most recent.
-                <br />
-                <br />
-                <a href="#" target="_blank">View the project here.</a>
+                <a href="files/popWords.zip" target="_blank">View the project here.</a>
               </div>
             </div>
 
@@ -651,16 +651,13 @@
                 </figcaption>
               </figure>
               <div id="inline-popup-ups" class="white-popup mfp-hide">
-                At United Postal Service (UPS), I was tasked with creating an administrator dashboard for managers and executives. Before this dashboard, data was managed via excel and email, which resulted in loss of data or miscommunication.
+                <span><strong>Problem:</strong> Data is managed via excel then shared through email, which resulted in loss of data and ineffciency</span>
                 <br />
+                <span><strong>Solution:</strong> Design and develop an administrator dashboard that allows users to download up-to-date data</span>
                 <br />
-                In order to build this dashboard, my coworker and I decided to utilize C# and SQL for the backend, and Ext JS for everything else. As we started building the backend, I was in communication with the district manager regarding the dashboard design, which I made in Adobe XD.
+                <span><strong>Plan:</strong> Collaborate with the district manager regarding the dashboard design, which I made in Adobe XD. Utilize C# and SQL for the backend and databases, then let ExtJS handle everything else since it's already in their system</span>
                 <br />
-                <br />
-                With a design wireframe and backend in place, my coworker and I finished the frontend much quicker than we anticipated. We implimented Ext JS's kitchen sink chart components in order to 'bring it to life'.
-                <br />
-                <br />
-                <a href="#" target="_blank">Preview the dashboard here.</a>
+                <span><strong>Reasoning for tech stack:</strong> UPS had existing C# that I could use for API calls between the frontend and SQL. For the frontend, ExtJS best fit because it is already in their system and it has a free library of graphical components (Kitchen Sink)</span>
               </div>
             </div>
 
@@ -675,13 +672,23 @@
 								</figcaption>
 							</figure>
               <div id="inline-popup-liquidity" class="white-popup mfp-hide">
-                Liquidity is a tool that measures a coin's liquidity at a specific volume at moment in time. We saw the fake volume many crypto exchanges would market themselves as having and deemed that as unfair. We figured out how to make a tool to disprove all that fake volume so users buying and selling crypto would never be lied to again.
+                <!-- Liquidity is a tool that measures a coin's liquidity at a specific volume at moment in time. We saw the fake volume many crypto exchanges would market themselves as having and deemed that as unfair. We figured out how to make a tool to disprove all that fake volume so users buying and selling crypto would never be lied to again.
                 <br />
                 <br />
                 As one of the co-founders of Liquidity, I assumed the role of lead frontend developer and also helped out with any organizational or presentational assignments as well. I designed this tool to be minimal, easy to use, and sleek.
+                 -->
+                 <span><strong>*Won $15,000 Student Venture Fellowship Award for this tool</strong></span>
+                 <br />
+                 <span><strong>Problem:</strong> Over 95% of reported volume in cryptocurrency exchanges is fake</span>
+                 <br />
+                 <span><strong>Solution:</strong> Program a tool that presents the true liquidity of a speicific coin on all exchanges, to quickly distinguish the best option</span>
+                 <br />
+                 <span><strong>Plan:</strong> Design the website intented for marketing as well as the tool itself. Build the backend using Django.........</span>
+                 <br />
+                 <span><strong>Reasoning for tech stack:</strong> UPS had existing C# that I could use for API calls between the frontend and SQL. For the frontend, ExtJS best fit because it is already in their system and it has a free library of graphical components (Kitchen Sink)</span>
                 <br />
                 <br />
-                <a href="liquidity.so" target="_blank">View the website and beta version of the tool here.</a>
+                <a href="http://www.liquidity.so/" target="_blank">View the website and beta version of the tool here.</a>
               </div>
 						</div>
 
@@ -699,7 +706,7 @@
                 This is a python sentiment calculator that was assigned to my class at New York University. Using Elon Musk's tweets from a span of over 3 years, it accepts phrases to analyze and then provides the user with a sentiment rating according to each individual word within the phrase.
                 <br />
                 <br />
-                <a href="#" target="_blank">Download the project here.</a>
+                <a href="files/Sentiment_Calc.zip" target="_blank">Download the project here.</a>
               </div>
 						</div>
 
@@ -720,7 +727,11 @@
                 While designing the website, I tried to logically order the content considering how to breifly explain what Transfernation does then lead the user to a call to action button to download the app where all the orders are done.
                 <br />
                 <br />
-                <a href="#" target="_blank">Visit the website here.</a>
+                <video src="files/tn-case-record.mov" autoplay muted loop>
+                Your browser does not support the video tag.
+                </video>
+                <br />
+                <a href="transfernation.org" target="_blank">Visit the website here.</a>
               </div>
             </div>
 
@@ -738,7 +749,7 @@
                 This was a Python university assignment that will generate an encrypted password for the user. While this was one of my first computer science assignments at New York University, it solves a common problem today.
                 <br />
                 <br />
-                <a href="#" target="_blank">Download the project here.</a>
+                <a href="files/PassGen.py.zip" download>Download the project here.</a>
               </div>
             </div>
 
@@ -756,12 +767,12 @@
                 This is a marketing agency looking seperate themselves from other websites. It is meant to be clean and organized, yet informational and 'techy'.
                 <br />
                 <br />
-                <a href="#" target="_blank">Visit the website here.</a>
+                <a href="maybach-media.com" target="_blank">Visit the website here.</a>
               </div>
             </div>
 
 						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 uni">
+						<!-- <div class="item col-lg-4 col-sm-6 uni">
 							<figure>
 								<img alt="" src="img/portfolio/java.jpg">
 								<figcaption>
@@ -771,12 +782,12 @@
 								</figcaption>
 							</figure>
               <div id="inline-popup-java-proccess" class="white-popup mfp-hide">
-                This was a university assignment that simulated a star wars battle using Java's Processing software. In more detail, it uses coordinates and time in order to move the appropriate components on the screen.
+                This was a university assignment that simulated a Star Wars battle using Java's Processing software. In more detail, it uses coordinates and time in order to move the appropriate components on the screen.
                 <br />
                 <br />
-                <a href="#" target="_blank">Download the project here.</a>
+                <a href="" target="_blank">Download the project here.</a>
               </div>
-						</div>
+						</div> -->
 
 						<!-- Portfolio Item -->
 						<div class="item col-lg-4 col-sm-6 design">
@@ -795,7 +806,9 @@
                 As the lead designer, I utilized Adobe XD to create a logical and practical user experience. With a young audience in mind, I decided to select a sleek color pallete and focused most on how to present the immense amount of data the AI generated.
                 <br />
                 <br />
-                <a href="#" target="_blank">See the beta version here.</a>
+                <img alt="" src="files/Dashboard-Web-UPDATED.png">
+                <br />
+                <a href="files/adGuruWireframes.zip" target="_blank">See the wireframes here.</a>
               </div>
 						</div>
 

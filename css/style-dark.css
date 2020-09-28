@@ -1691,6 +1691,10 @@ blockquote:before,
   margin: 20px auto;
 	color: #000;
 	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*align-items: center;*/
 }
 @media screen and (max-width: 767px) {
 	.white-popup {
@@ -1699,11 +1703,16 @@ blockquote:before,
 }
 .white-popup a {
 	color: #d94c48;
+	align-self: center;
 }
 .white-popup a:hover {
 	color: #aa0200 !important;
 }
-
+.white-popup video, .white-popup img {
+	width: 70%;
+	border-radius: 4px;
+	align-self: center;
+}
 
 /* ---------------------------------
 		9. Contact Section
